@@ -44,8 +44,12 @@ public class Methods {
     }
 
     static void introduce(int i) {
-        int phrase = RandNumIn.randNum(4);
+        int phrase = 0;
+        int[]cache=new int[totalQtty];
+        for (int j = 0; j <totalQtty ; j++) {
+            phrase=RandNumIn.randNum(totalQtty);
 
+        }
         switch (phrase) {
             case 0:
                 System.out.println("辣么，下面我来介绍一下自己~");
